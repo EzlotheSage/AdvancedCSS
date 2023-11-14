@@ -1,63 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap");
-h2,
-h3,
-h4 {
-  font-family: "Limelight", serif;
-  margin: 0;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 34 |   background: $accent1;
+ *    |               ^^^^^^^^
+ *    '
+ *   _atoms.scss 34:15  @use
+ *   style.scss 3:1     root stylesheet */
 
-h1 {
-  background: #ffe118;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: normal;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
   margin-bottom: 1em;
-  padding: 0.5em 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 34 \2502    background: $accent1;\a    \2502                ^^^^^^^^\a    \2575 \a   _atoms.scss 34:15  @use\a   style.scss 3:1     root stylesheet";
 }
-
-h2 {
-  color: #ffffff;
-  font-weight: 900; /* Heavy */
-  font-size: 6em;
-  letter-spacing: 1px;
-  line-height: 1em;
-}
-
-h3 {
-  font-size: 2.25em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
-}
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0;
-  color: lime;
-}
-
-p {
-  font-family: "Poiret One", serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  padding: 0.5em 0;
-  margin: 0;
-}
-
-a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  font-family: "Poiret One", serif;
-  color: #000000;
-  text-decoration: none;
-  transition: border-color 0.2s ease-in-out;
-}
-
-a:hover {
-  border-color: #ffe118;
-}
-
-/*# sourceMappingURL=style.css.map */
