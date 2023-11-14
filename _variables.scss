@@ -1,7 +1,16 @@
-//variables for css zen garden
+// COLORS OF CITYSCAPE ILLUSTRATION
+// Blues-light to dark: #D6E2E3, #8DA4AE, #718C9A, #557687, #395F72, #314F60, #25404D, #1C2F3A, #141F26
+// Red: #b32524, #8D1A1C
+// Yellow: #FFF0D3, #FFEEBD, #FFE69E, #FEC215
 
-$background-color-light: #a7bac1;
-$background-color-dark: #1c2f3a;
+//VARIABLES FOR ART DECO ZEN GARDEN
+
+// COLORS AND FONTS
+
+$background-color-light: #8da4ae;
+$background-color-medium: #557687;
+$background-color-medium-dark: #314f60;
+$background-color-dark: #141f26;
 $primary: #557687;
 $primary-accent1: #b32524;
 $primary-accent2: #8d1a1c;
@@ -21,7 +30,8 @@ $fonts-body: "Poiret One", serif;
 $fonts-body-size: 20px;
 $fonts-body-color: #141f26;
 
-// COLORS OF CITYSCAPE ILLUSTRATION
-// Blues-light to dark: #8DA4AE, #718C9A, #557687, #395F72, #314F60, #25404D, #1C2F3A, #141F26
-// Red: #b32524, #8D1A1C
-// Yellow: #FFF0D3, #FFEEBD, #FFE69E, #FEC215
+// SIZ:ES
+
+$large-space: 4rem;
+$medium-space: 3rem;
+$small-space: 2rem;

@@ -1,0 +1,55 @@
+// BASE STYLES
+
+@use "variables" as *;
+@use "mixins" as *;
+
+// CSS RESET
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines the size of 1 rem / = 10px.
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to bottom,
+    $background-color-light,
+    $background-color-medium,
+    $background-color-medium-dark,
+    $background-color-dark
+  );
+}
+
+// these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
+h1,
+h2,
+h3 {
+  font-family: $fonts-headline;
+}
+
+h1,
+header h2 {
+  display: none;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+p {
+  @include set-font(1.6em, 1.5em);
+  padding: 0.5em 0;
+}

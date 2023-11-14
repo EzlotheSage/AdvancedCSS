@@ -1,18 +1,54 @@
-/* Error: Undefined variable.
- *    ,
- * 34 |   background: $accent1;
- *    |               ^^^^^^^^
- *    '
- *   _atoms.scss 34:15  @use
- *   style.scss 3:1     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 34 \2502    background: $accent1;\a    \2502                ^^^^^^^^\a    \2575 \a   _atoms.scss 34:15  @use\a   style.scss 3:1     root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap");
+.page-wrapper {
+  margin: 4rem 2rem;
 }
+
+.summary::before {
+  content: url(CityScape-Small.svg);
+  max-width: 500px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, #8da4ae, #557687, #314f60, #141f26);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Limelight", serif;
+}
+
+h1,
+header h2 {
+  display: none;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+p {
+  font-family: "Poiret One", serif;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+}
+
+/*# sourceMappingURL=style.css.map */

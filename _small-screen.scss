@@ -1,0 +1,15 @@
+// SMALL VIEW
+
+@use "variables" as *;
+@use "mixins" as *;
+
+//  Intro
+
+.page-wrapper {
+  margin: $large-space $small-space;
+}
+
+.summary::before {
+  content: url(CityScape-Small.svg);
+  max-width: 500px;
+}
