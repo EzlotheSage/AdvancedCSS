@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap");
 .page-wrapper {
-  margin: 3rem 1.5rem;
+  margin: 3rem 1rem;
 }
 
 header::after {
   content: url(CityScape-Small.svg);
   max-width: 500px;
-  filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 0.9));
+  filter: drop-shadow(0 0 5rem rgba(255, 251, 242, 0.9));
   margin-bottom: 3rem;
 }
 
 .summary {
-  background-color: #a72220;
+  background-image: linear-gradient(to bottom, #b32524, #a72220 40%, #89181a);
   padding: 2rem 3rem;
   border: 0.5rem solid #fffbf2;
   outline: #fffbf2 solid 2px;
@@ -102,15 +102,16 @@ header::after {
   line-height: 1.6;
   font-weight: 800;
 }
-.sidebar li {
+
+li {
   list-style: none;
   font-family: "Poiret One", serif;
   font-size: 1.4rem;
   line-height: 1.5;
 }
-.sidebar h3 {
+
+h3 {
   margin-bottom: 1rem;
-  background-color: #8da4ae;
 }
 
 .design-selection,
@@ -166,15 +167,18 @@ header::after {
 .main footer a:active {
   color: #141f26;
 }
-.main footer .zen-validate-html,
-.main footer .zen-github {
+
+.zen-validate-html,
+.zen-github {
   border: 0.4rem solid #a72220;
 }
-.main footer .zen-validate-css,
-.main footer .zen-accessibility {
+
+.zen-validate-css,
+.zen-accessibility {
   border: 0.4rem solid #8da4ae;
 }
-.main footer .zen-license {
+
+.zen-license {
   border: 0.4rem solid #fec215;
 }
 
@@ -193,7 +197,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #8da4ae 40%, #557687, #314f60, #141f26);
+  background-image: linear-gradient(to bottom, #a7bac1 40%, #8da4ae, #557687, #314f60, #141f26);
 }
 
 h1,
@@ -210,7 +214,6 @@ header h2 {
 h3 {
   text-align: center;
   font-size: 2.15rem;
-  font-weight: 200; /* Thin */
   letter-spacing: 1px;
   line-height: 2.5rem;
   padding: 1.5rem;
@@ -219,6 +222,7 @@ h3 {
   border-radius: 0.5rem;
   outline: #141f26 solid 0.15rem;
   outline-offset: -1rem;
+  background-image: linear-gradient(to bottom, #a7bac1 25%, #8da4ae 60%, #557687 96%);
 }
 
 p {

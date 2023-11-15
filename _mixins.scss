@@ -7,38 +7,26 @@
   line-height: $line-height;
 }
 
-@mixin set-flex($gap: $small-space, $justify: center) {
-  display: flex;
-  gap: $gap;
-  justify-content: $justify;
-}
-
 @mixin grid($col...) {
   display: grid;
   grid-template-columns: $col;
 }
 
-@mixin divider($color: $accent1) {
-  border-top: 2px solid $color;
-  margin-top: 1em;
-  padding-top: 1.5em;
-}
-
 @mixin text-box() {
-  background-color: $text-light;
+  background-color: $secondary-accent2;
   padding: $medium-space $large-space;
-  color: $text-dark;
+  color: $color-dark;
   border-radius: $extra-small-space;
   margin: $x-large-space $extra-small-space;
 }
 
-@mixin color-box($box-color: $primary-accent2) {
+@mixin color-box($box-color: $primary-accent) {
   border: 0.5rem solid $box-color;
 }
 
 @mixin h3-text-box() {
-  border: 0.3rem solid $text-dark;
+  border: 0.3rem solid $color-dark;
   border-radius: 0.5rem;
-  outline: $fonts-body-color solid 0.15rem;
+  outline: $color-dark solid 0.15rem;
   outline-offset: -$extra-small-space;
 }

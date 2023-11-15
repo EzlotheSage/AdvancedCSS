@@ -6,24 +6,29 @@
 //  Intro
 
 .page-wrapper {
-  margin: $large-space $small-space;
+  margin: $large-space $extra-small-space;
 }
 
 header::after {
   content: url(CityScape-Small.svg);
   max-width: 500px;
-  filter: drop-shadow(0 0 5rem rgba(#fff, 0.9));
+  filter: drop-shadow(0 0 5rem rgba($secondary-accent2, 0.9));
   margin-bottom: $large-space;
 }
 
 .summary {
-  background-color: $primary-accent2;
+  background-image: linear-gradient(
+    to bottom,
+    $primary-accent-light,
+    $primary-accent 40%,
+    $primary-accent-dark
+  );
   padding: $medium-space $large-space;
   border: 0.5rem solid $secondary-accent2;
   outline: $secondary-accent2 solid 2px;
   outline-offset: -$small-space;
   border-radius: $extra-small-space;
-  color: $text-light;
+  color: $secondary-accent2;
   margin: $x-large-space $extra-small-space;
 
   p {
@@ -44,13 +49,13 @@ header::after {
     }
 
     &:hover {
-      color: $background-color-light;
-      border-bottom: 0.15rem solid $background-color-light;
+      color: $color-light;
+      border-bottom: 0.15rem solid $color-light;
     }
 
     &:active {
-      color: $background-color-medium;
-      border-bottom: 0.15rem solid $background-color-medium;
+      color: $color-medium;
+      border-bottom: 0.15rem solid $color-medium;
     }
   }
 }
@@ -65,7 +70,7 @@ header::after {
 }
 
 .preamble {
-  @include color-box($box-color: $background-color-medium);
+  @include color-box($box-color: $color-medium);
 }
 
 .explanation {
@@ -73,11 +78,11 @@ header::after {
 }
 
 .participation {
-  @include color-box($box-color: $primary-accent2);
+  @include color-box($box-color: $primary-accent);
 }
 
 .benefits {
-  @include color-box($box-color: $background-color-medium);
+  @include color-box($box-color: $color-medium);
 }
 
 .requirements {
@@ -87,22 +92,22 @@ header::after {
 .sidebar {
   margin-bottom: 25vh;
   text-align: center;
-  @include color-box($box-color: $primary-accent2);
+  @include color-box($box-color: $primary-accent);
 
   a {
     text-decoration: none;
 
     &:link,
     &:visited {
-      color: $fonts-body-color;
+      color: $color-dark;
     }
 
     &:hover {
-      color: $primary-accent2;
+      color: $primary-accent;
     }
 
     &:active {
-      color: $background-color-medium;
+      color: $color-medium;
     }
 
     &.design-name {
@@ -111,16 +116,15 @@ header::after {
       font-weight: 800;
     }
   }
+}
 
-  li {
-    list-style: none;
-    @include set-font(1.4rem, 1.5);
-  }
+li {
+  list-style: none;
+  @include set-font(1.4rem, 1.5);
+}
 
-  h3 {
-    margin-bottom: $extra-small-space;
-    background-color: $background-color-light;
-  }
+h3 {
+  margin-bottom: $extra-small-space;
 }
 
 .design-selection,
@@ -139,12 +143,12 @@ header::after {
   a {
     &:link,
     &:visited {
-      color: $primary-accent2;
+      color: $primary-accent;
       font-weight: 800;
     }
 
     &:hover {
-      color: $background-color-medium;
+      color: $color-medium;
     }
 
     &:active {
@@ -172,29 +176,30 @@ header::after {
 
     &:link,
     &:visited {
-      color: $text-light;
+      color: $secondary-accent2;
       text-decoration: none;
     }
 
     &:hover {
-      color: $background-color-light;
+      color: $color-light;
     }
 
     &:active {
-      color: $background-color-dark;
+      color: $color-dark;
     }
   }
+}
 
-  .zen-validate-html,
-  .zen-github {
-    border: 0.4rem solid $primary-accent2;
-  }
-  .zen-validate-css,
-  .zen-accessibility {
-    border: 0.4rem solid $background-color-light;
-  }
+.zen-validate-html,
+.zen-github {
+  border: 0.4rem solid $primary-accent;
+}
 
-  .zen-license {
-    border: 0.4rem solid $secondary-accent1;
-  }
+.zen-validate-css,
+.zen-accessibility {
+  border: 0.4rem solid $color-light;
+}
+
+.zen-license {
+  border: 0.4rem solid $secondary-accent1;
 }
