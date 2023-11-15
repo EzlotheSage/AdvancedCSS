@@ -90,7 +90,8 @@ header::after {
 }
 
 .sidebar {
-  margin-bottom: 25vh;
+  max-width: 33.5rem;
+  margin: 0 auto 25vh auto;
   text-align: center;
   @include color-box($box-color: $primary-accent);
 
