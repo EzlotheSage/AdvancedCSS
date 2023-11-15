@@ -1,25 +1,44 @@
 @use "variables" as *;
 
 // mixins to take care of repeated patterns.
-@mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
+@mixin set-font($size: 1.6rem, $line-height: 1.6, $font: $fonts-body) {
   font-family: $font;
   font-size: $size;
   line-height: $line-height;
 }
 
-@mixin set-flex($direction: row, $wrap: wrap) {
+@mixin set-flex($gap: $small-space, $justify: center) {
   display: flex;
-  flex-flow: $direction $wrap;
+  gap: $gap;
+  justify-content: $justify;
 }
 
-@mixin uppercase($color: $text-dark) {
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: $color;
+@mixin grid($col...) {
+  display: grid;
+  grid-template-columns: $col;
 }
+
 @mixin divider($color: $accent1) {
   border-top: 2px solid $color;
   margin-top: 1em;
   padding-top: 1.5em;
+}
+
+@mixin text-box() {
+  background-color: $text-light;
+  padding: $medium-space $large-space;
+  color: $text-dark;
+  border-radius: $extra-small-space;
+  margin: $x-large-space $extra-small-space;
+}
+
+@mixin color-box($box-color: $primary-accent2) {
+  border: 0.5rem solid $box-color;
+}
+
+@mixin h3-text-box() {
+  border: 0.3rem solid $text-dark;
+  border-radius: 0.5rem;
+  outline: $fonts-body-color solid 0.15rem;
+  outline-offset: -$extra-small-space;
 }

@@ -1,11 +1,181 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap");
 .page-wrapper {
-  margin: 4rem 2rem;
+  margin: 3rem 1.5rem;
 }
 
-.summary::before {
+header::after {
   content: url(CityScape-Small.svg);
   max-width: 500px;
+  filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 0.9));
+  margin-bottom: 3rem;
+}
+
+.summary {
+  background-color: #a72220;
+  padding: 2rem 3rem;
+  border: 0.5rem solid #fffbf2;
+  outline: #fffbf2 solid 2px;
+  outline-offset: -1.5rem;
+  border-radius: 1rem;
+  color: #fffbf2;
+  margin: 4rem 1rem;
+}
+.summary p {
+  font-family: "Poiret One", serif;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.summary p:nth-child(2) {
+  font-family: "Poiret One", serif;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.summary a:link, .summary a:visited {
+  color: #fec215;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 0.15rem solid #fec215;
+}
+.summary a:hover {
+  color: #8da4ae;
+  border-bottom: 0.15rem solid #8da4ae;
+}
+.summary a:active {
+  color: #557687;
+  border-bottom: 0.15rem solid #557687;
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.sidebar {
+  background-color: #fffbf2;
+  padding: 2rem 3rem;
+  color: #141f26;
+  border-radius: 1rem;
+  margin: 4rem 1rem;
+}
+
+.preamble {
+  border: 0.5rem solid #557687;
+}
+
+.explanation {
+  border: 0.5rem solid #fec215;
+}
+
+.participation {
+  border: 0.5rem solid #a72220;
+}
+
+.benefits {
+  border: 0.5rem solid #557687;
+}
+
+.requirements {
+  border: 0.5rem solid #fec215;
+}
+
+.sidebar {
+  margin-bottom: 25vh;
+  text-align: center;
+  border: 0.5rem solid #a72220;
+}
+.sidebar a {
+  text-decoration: none;
+}
+.sidebar a:link, .sidebar a:visited {
+  color: #141f26;
+}
+.sidebar a:hover {
+  color: #a72220;
+}
+.sidebar a:active {
+  color: #557687;
+}
+.sidebar a.design-name {
+  display: block;
+  font-family: "Poiret One", serif;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 800;
+}
+.sidebar li {
+  list-style: none;
+  font-family: "Poiret One", serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.sidebar h3 {
+  margin-bottom: 1rem;
+  background-color: #8da4ae;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  margin-bottom: 4rem;
+}
+
+.design-archives a,
+.zen-resources a {
+  font-family: "Poiret One", serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 800;
+}
+
+.main a:link, .main a:visited {
+  color: #a72220;
+  font-weight: 800;
+}
+.main a:hover {
+  color: #557687;
+}
+.main a:active {
+  color: #fec215;
+}
+
+.main footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90vw;
+  margin: 10vh 5vw;
+}
+.main footer a {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.main footer a:link, .main footer a:visited {
+  color: #fffbf2;
+  text-decoration: none;
+}
+.main footer a:hover {
+  color: #8da4ae;
+}
+.main footer a:active {
+  color: #141f26;
+}
+.main footer .zen-validate-html,
+.main footer .zen-github {
+  border: 0.4rem solid #a72220;
+}
+.main footer .zen-validate-css,
+.main footer .zen-accessibility {
+  border: 0.4rem solid #8da4ae;
+}
+.main footer .zen-license {
+  border: 0.4rem solid #fec215;
 }
 
 *,
@@ -18,11 +188,12 @@
 
 html {
   font-size: 62.5%;
+  position: relative;
 }
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #8da4ae, #557687, #314f60, #141f26);
+  background-image: linear-gradient(to bottom, #8da4ae 40%, #557687, #314f60, #141f26);
 }
 
 h1,
@@ -37,18 +208,31 @@ header h2 {
 }
 
 h3 {
-  font-size: 2.25em;
+  text-align: center;
+  font-size: 2.15rem;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
+  line-height: 2.5rem;
+  padding: 1.5rem;
+  color: #141f26;
+  border: 0.3rem solid #141f26;
+  border-radius: 0.5rem;
+  outline: #141f26 solid 0.15rem;
+  outline-offset: -1rem;
 }
 
 p {
   font-family: "Poiret One", serif;
-  font-size: 1.6em;
-  line-height: 1.5em;
-  padding: 0.5em 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 1rem 0;
+}
+
+li {
+  font-family: "Poiret One", serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

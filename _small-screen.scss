@@ -9,7 +9,192 @@
   margin: $large-space $small-space;
 }
 
-.summary::before {
+header::after {
   content: url(CityScape-Small.svg);
   max-width: 500px;
+  filter: drop-shadow(0 0 5rem rgba(#fff, 0.9));
+  margin-bottom: $large-space;
+}
+
+.summary {
+  background-color: $primary-accent2;
+  padding: $medium-space $large-space;
+  border: 0.5rem solid $secondary-accent2;
+  outline: $secondary-accent2 solid 2px;
+  outline-offset: -$small-space;
+  border-radius: $extra-small-space;
+  color: $text-light;
+  margin: $x-large-space $extra-small-space;
+
+  p {
+    @include set-font(2rem, 1.4);
+
+    &:nth-child(2) {
+      @include set-font(1.3rem, 1.2);
+    }
+  }
+
+  a {
+    &:link,
+    &:visited {
+      color: $secondary-accent1;
+      font-weight: 800;
+      text-decoration: none;
+      border-bottom: 0.15rem solid $secondary-accent1;
+    }
+
+    &:hover {
+      color: $background-color-light;
+      border-bottom: 0.15rem solid $background-color-light;
+    }
+
+    &:active {
+      color: $background-color-medium;
+      border-bottom: 0.15rem solid $background-color-medium;
+    }
+  }
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.sidebar {
+  @include text-box();
+}
+
+.preamble {
+  @include color-box($box-color: $background-color-medium);
+}
+
+.explanation {
+  @include color-box($box-color: $secondary-accent1);
+}
+
+.participation {
+  @include color-box($box-color: $primary-accent2);
+}
+
+.benefits {
+  @include color-box($box-color: $background-color-medium);
+}
+
+.requirements {
+  @include color-box($box-color: $secondary-accent1);
+}
+
+.sidebar {
+  margin-bottom: 25vh;
+  text-align: center;
+  @include color-box($box-color: $primary-accent2);
+
+  a {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $fonts-body-color;
+    }
+
+    &:hover {
+      color: $primary-accent2;
+    }
+
+    &:active {
+      color: $background-color-medium;
+    }
+
+    &.design-name {
+      display: block;
+      @include set-font(1.8rem);
+      font-weight: 800;
+    }
+  }
+
+  li {
+    list-style: none;
+    @include set-font(1.4rem, 1.5);
+  }
+
+  h3 {
+    margin-bottom: $extra-small-space;
+    background-color: $background-color-light;
+  }
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  margin-bottom: $x-large-space;
+}
+
+.design-archives a,
+.zen-resources a {
+  @include set-font(1.6rem);
+  font-weight: 800;
+}
+
+.main {
+  a {
+    &:link,
+    &:visited {
+      color: $primary-accent2;
+      font-weight: 800;
+    }
+
+    &:hover {
+      color: $background-color-medium;
+    }
+
+    &:active {
+      color: $secondary-accent1;
+    }
+  }
+}
+
+.main footer {
+  @include grid(1fr 1fr 1fr 1fr 1fr);
+  gap: $small-space;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90vw;
+  margin: 10vh 5vw;
+
+  a {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+
+    &:link,
+    &:visited {
+      color: $text-light;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $background-color-light;
+    }
+
+    &:active {
+      color: $background-color-dark;
+    }
+  }
+
+  .zen-validate-html,
+  .zen-github {
+    border: 0.4rem solid $primary-accent2;
+  }
+  .zen-validate-css,
+  .zen-accessibility {
+    border: 0.4rem solid $background-color-light;
+  }
+
+  .zen-license {
+    border: 0.4rem solid $secondary-accent1;
+  }
 }

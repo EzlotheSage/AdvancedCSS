@@ -1,7 +1,7 @@
 // COLORS OF CITYSCAPE ILLUSTRATION
-// Blues-light to dark: #D6E2E3, #8DA4AE, #718C9A, #557687, #395F72, #314F60, #25404D, #1C2F3A, #141F26
-// Red: #b32524, #8D1A1C
-// Yellow: #FFF0D3, #FFEEBD, #FFE69E, #FEC215
+// Blues-light to dark: #D6E2E3, #A7BAC1   #718C9A, #557687, #395F72, #314F60, #25404D, #1C2F3A, #141F26
+// Red: #b32524, #A72220
+// Yellow: #FFFBF2 #FFF0D3, #FFEEBD, #FFE69E, #FEC215
 
 //VARIABLES FOR ART DECO ZEN GARDEN
 
@@ -11,27 +11,29 @@ $background-color-light: #8da4ae;
 $background-color-medium: #557687;
 $background-color-medium-dark: #314f60;
 $background-color-dark: #141f26;
-$primary: #557687;
-$primary-accent1: #b32524;
-$primary-accent2: #8d1a1c;
-$secondary-accent: #fec215;
+$primary-accent2: #a72220;
+$secondary-accent1: #fec215;
+$secondary-accent2: #fffbf2;
 
 $text-dark: #141f26;
-$text-light: #ffefcd;
+$text-light: #fffbf2;
+$white: #fff;
 
 $fonts-headline: "Limelight", serif;
-$fonts-main-headline: 48px;
-$fonts-secondary-headline: 32px;
-$fonts-secondary-color: #1c2f3a;
-$fonts-aside-headline: 28px;
-$fonts-aside-color: #b32524;
+$fonts-headline-size: 2.15rem;
+$fonts-color: #1c2f3a;
 
 $fonts-body: "Poiret One", serif;
 $fonts-body-size: 20px;
 $fonts-body-color: #141f26;
 
 // SIZ:ES
+$xx-large-space: 8rem;
+$x-large-space: 4rem;
+$large-space: 3rem;
+$medium-space: 2rem;
+$small-space: 1.5rem;
+$extra-small-space: 1rem;
+$li-spacing: 0.6rem;
 
-$large-space: 4rem;
-$medium-space: 3rem;
-$small-space: 2rem;
+$outline-offset: 1.25rem;
