@@ -6,7 +6,7 @@
 header::after {
   content: url(CityScape-Small.svg);
   max-width: 500px;
-  filter: drop-shadow(0 0 5rem rgba(255, 251, 242, 0.9));
+  filter: drop-shadow(0 0 4rem rgba(255, 251, 242, 0.98));
   margin-bottom: 3rem;
 }
 
@@ -79,7 +79,7 @@ header::after {
 }
 
 .sidebar {
-  max-width: 33.5rem;
+  max-width: 42rem;
   margin: 0 auto 25vh auto;
   text-align: center;
   border: 0.5rem solid #a72220;
@@ -166,7 +166,7 @@ h3 {
   color: #8da4ae;
 }
 .main footer a:active {
-  color: #141f26;
+  color: #ffe69e;
 }
 
 .zen-validate-html,
@@ -198,7 +198,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #a7bac1 40%, #8da4ae, #557687, #314f60, #141f26);
+  background-image: linear-gradient(to bottom, #8da4ae 42%, #557687, #314f60, #141f26);
 }
 
 h1,

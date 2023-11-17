@@ -12,7 +12,7 @@
 header::after {
   content: url(CityScape-Small.svg);
   max-width: 500px;
-  filter: drop-shadow(0 0 5rem rgba($secondary-accent2, 0.9));
+  filter: drop-shadow(0 0 4rem rgba($secondary-accent2, 0.98));
   margin-bottom: $large-space;
 }
 
@@ -90,7 +90,7 @@ header::after {
 }
 
 .sidebar {
-  max-width: 33.5rem;
+  max-width: 42rem;
   margin: 0 auto 25vh auto;
   text-align: center;
   @include color-box($box-color: $primary-accent);
@@ -186,7 +186,7 @@ h3 {
     }
 
     &:active {
-      color: $color-dark;
+      color: $secondary-accent3;
     }
   }
 }

@@ -23,8 +23,8 @@ body {
   box-sizing: border-box;
   background-image: linear-gradient(
     to bottom,
-    $color-x-light 40%,
-    $color-light,
+    // $color-x-light,
+    $color-light 42%,
     $color-medium,
     $color-medium-dark,
     $color-dark
