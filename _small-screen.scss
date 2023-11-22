@@ -11,7 +11,9 @@
 
 header::after {
   content: url(CityScape-Small.svg);
-  max-width: 500px;
+  display: block;
+  max-width: 75rem;
+  margin: 0 auto;
   filter: drop-shadow(0 0 4rem rgba($secondary-accent2, 0.98));
   margin-bottom: $large-space;
 }
@@ -32,10 +34,12 @@ header::after {
   margin: $x-large-space $extra-small-space;
 
   p {
+    font-weight: 800;
     @include set-font(2rem, 1.4);
 
     &:nth-child(2) {
-      @include set-font(1.3rem, 1.2);
+      font-weight: normal;
+      @include set-font(1.6rem, 1.2);
     }
   }
 

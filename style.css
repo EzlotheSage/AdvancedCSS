@@ -5,7 +5,9 @@
 
 header::after {
   content: url(CityScape-Small.svg);
-  max-width: 500px;
+  display: block;
+  max-width: 75rem;
+  margin: 0 auto;
   filter: drop-shadow(0 0 4rem rgba(255, 251, 242, 0.98));
   margin-bottom: 3rem;
 }
@@ -21,13 +23,15 @@ header::after {
   margin: 4rem 1rem;
 }
 .summary p {
+  font-weight: 800;
   font-family: "Poiret One", serif;
   font-size: 2rem;
   line-height: 1.4;
 }
 .summary p:nth-child(2) {
+  font-weight: normal;
   font-family: "Poiret One", serif;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 1.2;
 }
 .summary a:link, .summary a:visited {
@@ -198,7 +202,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #8da4ae 42%, #557687, #314f60, #141f26);
+  background-image: linear-gradient(to bottom, #8da4ae 10%, #557687, #314f60, #141f26);
 }
 
 h1,
