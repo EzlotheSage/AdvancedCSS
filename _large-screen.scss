@@ -2,3 +2,10 @@
 
 @use "variables" as *;
 @use "mixins" as *;
+
+@media (min-width: 50rem) {
+  header::after {
+    content: url(CityScape.svg);
+    max-width: 100rem;
+  }
+}

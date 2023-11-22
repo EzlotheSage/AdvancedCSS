@@ -15,7 +15,6 @@ header::after {
   max-width: 75rem;
   margin: 0 auto;
   filter: drop-shadow(0 0 4rem rgba($secondary-accent2, 0.98));
-  margin-bottom: $large-space;
 }
 
 .summary {
@@ -31,7 +30,7 @@ header::after {
   outline-offset: -$small-space;
   border-radius: $extra-small-space;
   color: $secondary-accent2;
-  margin: $x-large-space $extra-small-space;
+  margin: $large-space $extra-small-space;
 
   p {
     font-weight: 800;

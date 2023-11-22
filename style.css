@@ -9,7 +9,6 @@ header::after {
   max-width: 75rem;
   margin: 0 auto;
   filter: drop-shadow(0 0 4rem rgba(255, 251, 242, 0.98));
-  margin-bottom: 3rem;
 }
 
 .summary {
@@ -20,7 +19,7 @@ header::after {
   outline-offset: -1.5rem;
   border-radius: 1rem;
   color: #fffbf2;
-  margin: 4rem 1rem;
+  margin: 3rem 1rem;
 }
 .summary p {
   font-weight: 800;
@@ -190,6 +189,12 @@ h3 {
   border: 0.4rem solid #fec215;
 }
 
+@media (min-width: 50rem) {
+  header::after {
+    content: url(CityScape.svg);
+    max-width: 100rem;
+  }
+}
 *,
 *::before,
 *::after {
