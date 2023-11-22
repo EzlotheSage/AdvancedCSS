@@ -60,33 +60,36 @@ header::after {
   color: #141f26;
   border-radius: 1rem;
   margin: 4rem 1rem;
+  font-family: "Poiret One", serif;
+  font-size: 2rem;
+  line-height: 1.4;
 }
 
 .preamble {
-  border: 0.5rem solid #557687;
+  border: 0.6rem solid #314f60;
 }
 
 .explanation {
-  border: 0.5rem solid #fec215;
+  border: 0.6rem solid #fec215;
 }
 
 .participation {
-  border: 0.5rem solid #a72220;
+  border: 0.6rem solid #a72220;
 }
 
 .benefits {
-  border: 0.5rem solid #557687;
+  border: 0.6rem solid #314f60;
 }
 
 .requirements {
-  border: 0.5rem solid #fec215;
+  border: 0.6rem solid #fec215;
 }
 
 .sidebar {
   max-width: 42rem;
   margin: 0 auto 25vh auto;
   text-align: center;
-  border: 0.5rem solid #a72220;
+  border: 0.6rem solid #a72220;
 }
 .sidebar a {
   text-decoration: none;
@@ -202,7 +205,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #8da4ae 10%, #557687, #314f60, #141f26);
+  background-image: linear-gradient(to bottom, #a7bac1 2%, #8da4ae 4%, #557687, #314f60, #141f26);
 }
 
 h1,
@@ -218,22 +221,22 @@ header h2 {
 
 h3 {
   text-align: center;
-  font-size: 2.15rem;
+  font-size: 2.25rem;
   letter-spacing: 1px;
   line-height: 2.5rem;
   padding: 1.5rem;
   color: #141f26;
-  border: 0.3rem solid #141f26;
-  border-radius: 0.5rem;
-  outline: #141f26 solid 0.15rem;
+  border: 0.4rem solid #141f26;
+  border-radius: 0.6rem;
+  outline: #141f26 solid 0.2rem;
   outline-offset: -1rem;
   background-image: linear-gradient(to bottom, #a7bac1 25%, #8da4ae 60%, #557687 96%);
 }
 
 p {
   font-family: "Poiret One", serif;
-  font-size: 1.6rem;
-  line-height: 1.6;
+  font-size: 2rem;
+  line-height: 1.4;
   padding: 1rem 0;
 }
 

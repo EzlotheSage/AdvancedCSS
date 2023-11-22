@@ -23,8 +23,8 @@ body {
   box-sizing: border-box;
   background-image: linear-gradient(
     to bottom,
-    // $color-x-light 5%,
-    $color-light 10%,
+    $color-x-light 2%,
+    $color-light 4%,
     $color-medium,
     $color-medium-dark,
     $color-dark
@@ -44,10 +44,7 @@ header h2 {
 }
 
 h3 {
-  text-align: center;
-  font-size: $fonts-headline-size;
-  letter-spacing: 1px;
-  line-height: 2.5rem;
+  @include h3-set-font();
   padding: $small-space;
   color: $color-dark;
   @include h3-text-box();
@@ -60,7 +57,7 @@ h3 {
 }
 
 p {
-  @include set-font();
+  @include set-font(2rem, 1.4);
   padding: $extra-small-space 0;
 }
 

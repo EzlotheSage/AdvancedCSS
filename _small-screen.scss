@@ -71,10 +71,11 @@ header::after {
 .requirements,
 .sidebar {
   @include text-box();
+  @include set-font(2rem, 1.4);
 }
 
 .preamble {
-  @include color-box($box-color: $color-medium);
+  @include color-box($box-color: $color-medium-dark);
 }
 
 .explanation {
@@ -86,7 +87,7 @@ header::after {
 }
 
 .benefits {
-  @include color-box($box-color: $color-medium);
+  @include color-box($box-color: $color-medium-dark);
 }
 
 .requirements {

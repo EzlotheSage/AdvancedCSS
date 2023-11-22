@@ -21,12 +21,19 @@
 }
 
 @mixin color-box($box-color: $primary-accent) {
-  border: 0.5rem solid $box-color;
+  border: 0.6rem solid $box-color;
+}
+
+@mixin h3-set-font($size: 2.25rem) {
+  text-align: center;
+  font-size: $size;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
 }
 
 @mixin h3-text-box() {
-  border: 0.3rem solid $color-dark;
-  border-radius: 0.5rem;
-  outline: $color-dark solid 0.15rem;
+  border: 0.4rem solid $color-dark;
+  border-radius: 0.6rem;
+  outline: $color-dark solid 0.2rem;
   outline-offset: -$extra-small-space;
 }
