@@ -9,6 +9,11 @@
   margin: 10vw auto;
 }
 
+.intro,
+.main {
+  margin: 0 5vw;
+}
+
 header::after {
   content: url(CityScape-Small.svg);
   display: block;

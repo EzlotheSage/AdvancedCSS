@@ -23,7 +23,7 @@
     max-width: 120rem;
     margin: 5vw auto;
     @include grid(2fr 1fr);
-    grid-template-rows: auto auto 1fr 1fr;
+    grid-template-rows: auto auto 20rem;
     gap: $xx-large-space;
   }
 
@@ -47,13 +47,14 @@
   }
 
   .summary {
-    max-width: 50rem;
+    max-width: 75rem;
     margin: $xx-large-space 0;
   }
 
   .main footer {
-    margin-top: 20rem;
-    max-width: 125rem;
+    margin-top: 15remrem;
+    margin-bottom: 10rem;
+    max-width: 106rem;
     gap: $xxx-large-space;
 
     a {

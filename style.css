@@ -3,6 +3,11 @@
   margin: 10vw auto;
 }
 
+.intro,
+.main {
+  margin: 0 5vw;
+}
+
 header::after {
   content: url(CityScape-Small.svg);
   display: block;
@@ -208,7 +213,7 @@ h3 {
     margin: 5vw auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto 1fr 1fr;
+    grid-template-rows: auto auto 20rem;
     gap: 6rem;
   }
   .intro {
@@ -229,12 +234,13 @@ h3 {
     align-self: start;
   }
   .summary {
-    max-width: 50rem;
+    max-width: 75rem;
     margin: 6rem 0;
   }
   .main footer {
-    margin-top: 20rem;
-    max-width: 125rem;
+    margin-top: 15remrem;
+    margin-bottom: 10rem;
+    max-width: 106rem;
     gap: 8rem;
   }
   .main footer a {
