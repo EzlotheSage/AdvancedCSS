@@ -3,9 +3,65 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-@media (min-width: 50rem) {
+@media only screen and (width >= 75rem) {
   header::after {
     content: url(CityScape.svg);
-    max-width: 100rem;
+    max-width: 105rem;
+    margin: 0 auto;
+  }
+
+  .preamble,
+  .explanation,
+  .participation,
+  .benefits,
+  .requirements,
+  .sidebar {
+    margin: 0;
+  }
+
+  .page-wrapper {
+    max-width: 120rem;
+    margin: 5vw auto;
+    @include grid(2fr 1fr);
+    grid-template-rows: auto auto 1fr 1fr;
+    gap: $xx-large-space;
+  }
+
+  .intro {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  .main {
+    max-width: 125rem;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    @include grid(1fr);
+    gap: $xx-large-space;
+  }
+
+  .sidebar {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: start;
+  }
+
+  .summary {
+    max-width: 50rem;
+    margin: $xx-large-space 0;
+  }
+
+  .main footer {
+    margin-top: 20rem;
+    max-width: 125rem;
+    gap: $xxx-large-space;
+
+    a {
+      padding: $medium-space $large-space;
+    }
+  }
+
+  .requirments {
+    margin-bottom: $xxx-large-space;
   }
 }

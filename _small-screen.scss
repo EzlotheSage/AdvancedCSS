@@ -6,7 +6,7 @@
 //  Intro
 
 .page-wrapper {
-  margin: $large-space $extra-small-space;
+  margin: 10vw auto;
 }
 
 header::after {
@@ -20,8 +20,8 @@ header::after {
 .summary {
   background-image: linear-gradient(
     to bottom,
-    $primary-accent-light,
-    $primary-accent 40%,
+    $primary-accent-light 60%,
+    $primary-accent,
     $primary-accent-dark
   );
   padding: $medium-space $large-space;
@@ -69,12 +69,13 @@ header::after {
 .benefits,
 .requirements,
 .sidebar {
+  margin: $x-large-space $extra-small-space;
   @include text-box();
   @include set-font(2rem, 1.4);
 }
 
 .preamble {
-  @include color-box($box-color: $color-medium-dark);
+  @include color-box($box-color: $color-dark);
 }
 
 .explanation {
@@ -86,7 +87,7 @@ header::after {
 }
 
 .benefits {
-  @include color-box($box-color: $color-medium-dark);
+  @include color-box($box-color: $color-dark);
 }
 
 .requirements {
@@ -163,7 +164,7 @@ h3 {
 }
 
 .main footer {
-  @include grid(1fr 1fr 1fr 1fr 1fr);
+  @include grid(repeat(5, 1fr));
   gap: $small-space;
   text-align: center;
   position: absolute;
@@ -171,10 +172,10 @@ h3 {
   left: 0;
   right: 0;
   width: 90vw;
-  margin: 10vh 5vw;
+  margin: $xxx-large-space auto;
 
   a {
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    padding: $extra-small-space $li-spacing $li-spacing $li-spacing;
     display: inline-block;
     border-radius: 0.5rem;
     font-size: 1.5rem;
@@ -202,7 +203,7 @@ h3 {
 
 .zen-validate-css,
 .zen-accessibility {
-  border: 0.4rem solid $color-light;
+  border: 0.4rem solid $color-medium;
 }
 
 .zen-license {
