@@ -14,14 +14,28 @@
   margin: 0 5vw;
 }
 
+abbr[title] {
+  text-decoration: none;
+}
+
+@keyframes moon-animation {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
 .intro::before {
   content: url(phases-of-the-moon-5.svg);
   display: block;
   width: 18%;
   margin: -5% 40% 0 60%;
-  filter: drop-shadow(0 0 4rem $secondary-accent2);
-  transform: translateY();
+  filter: drop-shadow(0 0 2rem $secondary-accent2);
+  animation: moon-animation 10s linear infinite;
 }
+
+
 
 header::after {
   content: url(CityScape-Small.svg);
@@ -169,6 +183,7 @@ h3 {
 
     &:hover {
       color: $color-medium;
+      transition: 0.05s ease all;
     }
 
     &:active {
