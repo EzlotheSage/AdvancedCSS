@@ -276,6 +276,7 @@ html {
 body {
   box-sizing: border-box;
   background-image: linear-gradient(to bottom, #8da4ae, #557687, #314f60, #141f26);
+  font-weight: 800;
 }
 
 h1,
