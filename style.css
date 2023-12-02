@@ -8,12 +8,20 @@
   margin: 0 5vw;
 }
 
+.intro::before {
+  content: url(phases-of-the-moon-5.svg);
+  display: block;
+  width: 18%;
+  margin: -5% 40% 0 60%;
+  filter: drop-shadow(0 0 4rem #fffbf2);
+  transform: translateY();
+}
+
 header::after {
   content: url(CityScape-Small.svg);
   display: block;
   max-width: 75rem;
   margin: 0 auto;
-  filter: drop-shadow(0 0 4rem rgba(255, 251, 242, 0.98));
 }
 
 .summary {
@@ -24,7 +32,7 @@ header::after {
   outline-offset: -1.5rem;
   border-radius: 1rem;
   color: #fffbf2;
-  margin: 3rem 1rem;
+  margin: 3rem 1.5rem;
 }
 .summary p {
   font-weight: 800;
@@ -142,7 +150,8 @@ h3 {
 
 .main a:link, .main a:visited {
   color: #a72220;
-  font-weight: 800;
+  font-weight: 900;
+  text-decoration: none;
 }
 .main a:hover {
   color: #557687;
@@ -194,22 +203,22 @@ h3 {
   border: 0.4rem solid #fec215;
 }
 
-@media only screen and (width >= 75rem) {
+@media only screen and (width >= 72rem) {
   header::after {
     content: url(CityScape.svg);
     max-width: 105rem;
     margin: 0 auto;
+    filter: drop-shadow(0 0 7rem #fffbf2);
   }
   .preamble,
   .explanation,
   .participation,
   .benefits,
-  .requirements,
-  .sidebar {
+  .requirements {
     margin: 0;
   }
   .page-wrapper {
-    max-width: 120rem;
+    max-width: 124rem;
     margin: 5vw auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -221,20 +230,21 @@ h3 {
     grid-row: 1/2;
   }
   .main {
-    max-width: 125rem;
     grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr;
     gap: 6rem;
+    margin: 0 0 0 5vw;
   }
   .sidebar {
     grid-column: 2/3;
     grid-row: 2/3;
     align-self: start;
+    margin: 0 5vw 0 0;
   }
   .summary {
-    max-width: 75rem;
+    max-width: 66%;
     margin: 6rem 0;
   }
   .main footer {
@@ -265,7 +275,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #a7bac1 2%, #8da4ae 4%, #557687, #314f60, #141f26);
+  background-image: linear-gradient(to bottom, #8da4ae, #557687, #314f60, #141f26);
 }
 
 h1,

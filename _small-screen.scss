@@ -14,12 +14,20 @@
   margin: 0 5vw;
 }
 
+.intro::before {
+  content: url(phases-of-the-moon-5.svg);
+  display: block;
+  width: 18%;
+  margin: -5% 40% 0 60%;
+  filter: drop-shadow(0 0 4rem $secondary-accent2);
+  transform: translateY();
+}
+
 header::after {
   content: url(CityScape-Small.svg);
   display: block;
   max-width: 75rem;
   margin: 0 auto;
-  filter: drop-shadow(0 0 4rem rgba($secondary-accent2, 0.98));
 }
 
 .summary {
@@ -35,7 +43,7 @@ header::after {
   outline-offset: -$small-space;
   border-radius: $extra-small-space;
   color: $secondary-accent2;
-  margin: $large-space $extra-small-space;
+  margin: $large-space $small-space;
 
   p {
     font-weight: 800;
@@ -155,7 +163,8 @@ h3 {
     &:link,
     &:visited {
       color: $primary-accent;
-      font-weight: 800;
+      font-weight: 900;
+      text-decoration: none;
     }
 
     &:hover {

@@ -3,24 +3,24 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-@media only screen and (width >= 75rem) {
+@media only screen and (width >= 72rem) {
   header::after {
     content: url(CityScape.svg);
     max-width: 105rem;
     margin: 0 auto;
+    filter: drop-shadow(0 0 7rem $secondary-accent2);
   }
 
   .preamble,
   .explanation,
   .participation,
   .benefits,
-  .requirements,
-  .sidebar {
+  .requirements {
     margin: 0;
   }
 
   .page-wrapper {
-    max-width: 120rem;
+    max-width: 124rem;
     margin: 5vw auto;
     @include grid(2fr 1fr);
     grid-template-rows: auto auto 15rem;
@@ -33,21 +33,22 @@
   }
 
   .main {
-    max-width: 125rem;
     grid-column: 1/2;
     grid-row: 2/3;
     @include grid(1fr);
     gap: $xx-large-space;
+    margin: 0 0 0 5vw;
   }
 
   .sidebar {
     grid-column: 2/3;
     grid-row: 2/3;
     align-self: start;
+    margin: 0 5vw 0 0;
   }
 
   .summary {
-    max-width: 75rem;
+    max-width: 66%;
     margin: $xx-large-space 0;
   }
 
