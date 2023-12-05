@@ -19,11 +19,21 @@ abbr[title] {
 }
 
 @keyframes moon-animation {
-  0% {transform: rotate(0deg);}
-  25% {transform: rotate(5deg);}
-  50% {transform: rotate(0deg);}
-  75% {transform: rotate(-5deg);}
-  100% {transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .intro::before {
@@ -34,8 +44,6 @@ abbr[title] {
   filter: drop-shadow(0 0 2rem $secondary-accent2);
   animation: moon-animation 10s linear infinite;
 }
-
-
 
 header::after {
   content: url(CityScape-Small.svg);
