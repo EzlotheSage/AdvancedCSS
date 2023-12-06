@@ -13,6 +13,10 @@
   box-sizing: inherit;
 }
 
+:root {
+  --footer: clamp(1.5rem, 0.8097rem + 0.5682vw, 2rem);
+}
+
 html {
   // This defines the size of 1 rem / = 10px.
   font-size: 62.5%;

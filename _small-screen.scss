@@ -42,7 +42,7 @@ abbr[title] {
   width: 18%;
   margin: -5% 40% 0 60%;
   filter: drop-shadow(0 0 2rem $secondary-accent2);
-  animation: moon-animation 10s linear infinite;
+  animation: moon-animation 3s linear infinite;
 }
 
 header::after {
@@ -84,11 +84,13 @@ header::after {
       font-weight: 800;
       text-decoration: none;
       border-bottom: 0.15rem solid $secondary-accent1;
+      transition: all 0.1s ease-in-out;
     }
 
     &:hover {
       color: $color-light;
       border-bottom: 0.15rem solid $color-light;
+      transition: all 0.1s ease-in-out;
     }
 
     &:active {
@@ -141,10 +143,12 @@ header::after {
     &:link,
     &:visited {
       color: $color-dark;
+      transition: all 0.1s ease-in-out;
     }
 
     &:hover {
       color: $primary-accent;
+      transition: all 0.1s ease-in-out;
     }
 
     &:active {
@@ -162,6 +166,7 @@ header::after {
 li {
   list-style: none;
   @include set-font(1.4rem, 1.5);
+  font-weight: 400;
 }
 
 h3 {
@@ -187,11 +192,12 @@ h3 {
       color: $primary-accent;
       font-weight: 900;
       text-decoration: none;
+      transition: all 0.1s ease-in-out;
     }
 
     &:hover {
       color: $color-medium;
-      transition: 0.05s ease all;
+      transition: all 0.1s ease-in-out;
     }
 
     &:active {
@@ -215,16 +221,18 @@ h3 {
     padding: $extra-small-space $li-spacing $li-spacing $li-spacing;
     display: inline-block;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
+    font-size: var(--footer);
 
     &:link,
     &:visited {
       color: $secondary-accent2;
       text-decoration: none;
+      transition: all 0.1s ease-in-out;
     }
 
     &:hover {
       color: $color-light;
+      transition: all 0.1s ease-in-out;
     }
 
     &:active {

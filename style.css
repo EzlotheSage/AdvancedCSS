@@ -35,7 +35,7 @@ abbr[title] {
   width: 18%;
   margin: -5% 40% 0 60%;
   filter: drop-shadow(0 0 2rem #fffbf2);
-  animation: moon-animation 10s linear infinite;
+  animation: moon-animation 3s linear infinite;
 }
 
 header::after {
@@ -72,10 +72,12 @@ header::after {
   font-weight: 800;
   text-decoration: none;
   border-bottom: 0.15rem solid #fec215;
+  transition: all 0.1s ease-in-out;
 }
 .summary a:hover {
   color: #8da4ae;
   border-bottom: 0.15rem solid #8da4ae;
+  transition: all 0.1s ease-in-out;
 }
 .summary a:active {
   color: #557687;
@@ -129,9 +131,11 @@ header::after {
 }
 .sidebar a:link, .sidebar a:visited {
   color: #141f26;
+  transition: all 0.1s ease-in-out;
 }
 .sidebar a:hover {
   color: #a72220;
+  transition: all 0.1s ease-in-out;
 }
 .sidebar a:active {
   color: #557687;
@@ -149,6 +153,7 @@ li {
   font-family: "Poiret One", serif;
   font-size: 1.4rem;
   line-height: 1.5;
+  font-weight: 400;
 }
 
 h3 {
@@ -173,10 +178,11 @@ h3 {
   color: #a72220;
   font-weight: 900;
   text-decoration: none;
+  transition: all 0.1s ease-in-out;
 }
 .main a:hover {
   color: #557687;
-  transition: 0.05s ease all;
+  transition: all 0.1s ease-in-out;
 }
 .main a:active {
   color: #fec215;
@@ -198,14 +204,16 @@ h3 {
   padding: 1rem 0.6rem 0.6rem 0.6rem;
   display: inline-block;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: var(--footer);
 }
 .main footer a:link, .main footer a:visited {
   color: #fffbf2;
   text-decoration: none;
+  transition: all 0.1s ease-in-out;
 }
 .main footer a:hover {
   color: #8da4ae;
+  transition: all 0.1s ease-in-out;
 }
 .main footer a:active {
   color: #ffe69e;
@@ -277,7 +285,7 @@ h3 {
   }
   .main footer a {
     padding: 2rem 3rem;
-    font-size: 2rem;
+    font-size: var(--footer);
   }
   .requirments {
     margin-bottom: 8rem;
@@ -289,6 +297,10 @@ h3 {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+:root {
+  --footer: clamp(1.5rem, 0.8097rem + 0.5682vw, 2rem);
 }
 
 html {
