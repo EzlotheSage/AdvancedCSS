@@ -43,7 +43,7 @@ header::after {
   display: block;
   max-width: 75rem;
   margin: 0 auto;
-  filter: drop-shadow(0 0 7rem #fffbf2);
+  filter: drop-shadow(0 0 6rem #fffbf2);
 }
 
 .summary {
