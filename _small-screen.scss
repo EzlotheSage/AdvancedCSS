@@ -134,7 +134,7 @@ header::after {
 
 .sidebar {
   max-width: 42rem;
-  margin: 0 auto 25vh auto;
+  margin: 0 6.5vw 25vh 6.5vw;
   text-align: center;
   @include color-box($box-color: $primary-accent);
 
